@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$primary-color: #3e3f8e;
+$primary-btn:#38ae65;
+$font-weights:(
+    'regular':400,
+    'light':300,
+    'bold':700
+);
+
+@function weights($weight-name){
+    @return map-get($font-weights, $weight-name );
+}
+
+@mixin flex-center($direction){
+    display:flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-left($direction){
+    display:flex;
+    flex-direction: $direction;
+    align-items:flex-start;
+    justify-content: center;
+}
+

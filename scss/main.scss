@@ -1,0 +1,91 @@
+@import "config";
+@import "responsive";
+
+body {
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.1)
+    ),
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")
+      center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  @include flex-center(column);
+  h1#title {
+    font-size: 2rem;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    font-weight: weights(regular);
+  }
+  p#description {
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: weights(light);
+    padding-bottom: 3vh;
+  }
+}
+
+main {
+  @include flex-center(column);
+  form {
+    @include flex-left(column);
+    width: 70vw;
+    background-color: rgba(#272746, 0.8);
+    padding: 4% 5%;
+    font-size: 1.4rem;
+    border-radius: 5px;
+  }
+  #name,
+  #email,
+  #number,
+  select {
+    width: 100%;
+    height: 5vh;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.2rem;
+    padding-left: 1vw;
+    margin: 1vh 0 3vh 0;
+  }
+  div.radio-btns, div.checkbox{
+      @include flex-left(row);
+      margin: 1vh 1vw;
+    input[type='radio'], input[type='checkbox']{
+        align-self: center;
+        margin-right: 1vw;
+    }
+  }
+
+  label#textarea-label{
+      margin: 3vh 0 1vh 0;
+  }
+
+  textarea{
+      width:100%;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      padding: 3% 3%;
+  }
+
+  input[type='submit']{
+      width:100%;
+      height: 8vh;
+      background: $primary-btn;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 1.4rem;
+      margin-top: 3vh;
+  }
+
+  
+
+
+}

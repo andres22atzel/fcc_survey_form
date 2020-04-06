@@ -1,0 +1,143 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(62, 63, 142, 0.9)), to(rgba(62, 63, 142, 0.1))), url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") center top;
+  background: linear-gradient(to right, rgba(62, 63, 142, 0.9), rgba(62, 63, 142, 0.1)), url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1#title {
+  font-size: 2rem;
+  padding-top: 5vh;
+  padding-bottom: 1vh;
+  font-weight: 400;
+}
+
+header p#description {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 3vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70vw;
+  background-color: rgba(39, 39, 70, 0.8);
+  padding: 4% 5%;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+
+main #name,
+main #email,
+main #number,
+main select {
+  width: 100%;
+  height: 5vh;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2rem;
+  padding-left: 1vw;
+  margin: 1vh 0 3vh 0;
+}
+
+main div.radio-btns, main div.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1vh 1vw;
+}
+
+main div.radio-btns input[type='radio'], main div.radio-btns input[type='checkbox'], main div.checkbox input[type='radio'], main div.checkbox input[type='checkbox'] {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1vw;
+}
+
+main label#textarea-label {
+  margin: 3vh 0 1vh 0;
+}
+
+main textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 3% 3%;
+}
+
+main input[type='submit'] {
+  width: 100%;
+  height: 8vh;
+  background: #38ae65;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  margin-top: 3vh;
+}
+/*# sourceMappingURL=main.css.map */
